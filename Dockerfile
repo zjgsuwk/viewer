@@ -1,8 +1,8 @@
-FROM neptunus/youtube-viewer
+FROM neptunus/casperjs
 
 WORKDIR /workspace
 
 ADD . /workspace
 
-RUN python youtube.py 300 urls.txt 38 65
+RUN casperjs test.js
 
